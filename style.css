@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/bg\ img1.avif);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar button{
+    border: none;
+    outline: none;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 17px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .navbar .right .language{
+    background: none;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 7px 10px;
+    color: white;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content h1{
+    max-width: 650px;
+    line-height: 70px;
+    font-size: 3.1rem;
+    font-weight: 600;
+}
+
+.content h2{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.signup{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.signup input{
+    flex: 1;
+    border: 0;
+    outline: o;
+    margin-left: 20px;
+}
+
+.signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+
+.container{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row-1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img img{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.container h2{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.ques{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.ques h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.faq{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.faq li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.faq li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.faq .ans{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.faq input[type="radio"]:checked + label + .ans{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.faq input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.ques .signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.ques p{
+    font-size: 13px;
+}
+
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: whitesmoke;
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .row{
+    display: flex;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.footer .language{
+    background: none;
+    width: 120px;
+    max-width: 200px;
+    display: flex;
+    padding: 2px;
+    border-radius: 4px;
+    border: .2px solid whitesmoke;
+}
+
+.footer .select{
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: whitesmoke;
+    width: 300px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+}
+
+.footer .select ul{
+    position: absolute;
+    top: 120%;
+    left: 0;
+    list-style: none;
+    background: white;
+    color: #777;
+    width: 100%;
+    border-radius: 4px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+
+.footer .select ul li{
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+.footer .select ul.open{
+    max-height: 150px;
+}
+
+.footer .select ul li:hover{
+    background: rgb(0, 102, 255);
+    color: white;
+}
+.footer .copyright{
+    margin-top: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .logo{
+        width: 80px;
+    }
+    nav .right button{
+        padding: 5px 10px;
+    }
+    nav .right .language option{
+        padding: 4px 8px;
+    }
+    .content{
+        position: unset;
+        transform: none;
+        padding-top: 80px;
+    }
+    .content h1{
+        font-size: 30px;
+        line-height: 3.5rem;
+    }
+    .content h2{
+        font-size: 20px;
+    }
+    .signup button{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .text, .img{
+        flex-basis: 100%;
+    }
+    .text h2{
+        font-size: 30px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .row-1:nth-child(2), .row-1:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .container .row-1{
+        padding: 10px 0;
+    }
+    .ques h2{
+        font-size: 20px;
+    }
+    .faq .ans{
+        font-size: 14px;
+    }
+    .faq li label{
+        padding: 10px;
+        font-size: 14px;
+    }
+    label::after{
+        font-size: 22px;
+    }
+    .footer h2{
+        font-size: 15px;
+    }
+    .footer .col a{
+        width: 100%;
+        font-size: 12px;
+        padding-left: 4px;
+        padding-right: 2px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+    .content h1{
+        font-size: 45px;
+        width: 500px;
+    }
+    .row-1:nth-child(2), .row-1:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .row-1{
+        flex-direction: column;
+        padding: 8px 0;
+    }
+}
